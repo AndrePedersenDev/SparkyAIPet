@@ -1,5 +1,5 @@
 <div align="center">
-<img src="assets/SMLP.svg" width="50%" alt='super-auto-pets'>
+<img src="assets/" width="50%" alt='super-auto-pets'>
 <h1 align="center">super-ml-pets</h1>
 <h3 align="center">Framework for training and deploying AIs for Super Auto Pets</h3>
 
@@ -171,14 +171,13 @@ All credit to [jpdefrutos](https://github.com/jpdefrutos) for designing the amaz
 ## [Citation](https://github.com/andreped/super-ml-pets#citation)
 If you found this project relevant for your research, please, cite the following:
 ```
-@software{andre_pedersen_2023_7834142,
-  author       = {André Pedersen and Javier Pérez de Frutos and laughinggaschambers and GoldExplosion},
+@software{andre_pedersen_2024_7834142,
+  author       = {André Pedersen},
   title        = {andreped/super-ml-pets: v0.0.9},
-  month        = apr,
-  year         = 2023,
+  month        = dec,
+  year         = 2024,
   publisher    = {Zenodo},
   version      = {v0.0.9},
   doi          = {10.5281/zenodo.7834142},
-  url          = {https://doi.org/10.5281/zenodo.7834142}
 }
 ```
