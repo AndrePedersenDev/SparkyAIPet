@@ -1,16 +1,19 @@
 <div align="center">
-<img src="assets/" width="50%" alt='super-auto-pets'>
-<h1 align="center">super-ml-pets</h1>
+<img src="assets/Group 21.png" width="50%" alt='Sparky-ml-pets'>
+<h1 align="center">Sparky-ml-pets</h1>
 <h3 align="center">Framework for training and deploying AIs for Super Auto Pets</h3>
 
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7834142.svg)](https://doi.org/10.5281/zenodo.7834142)
-![CI](https://github.com/andreped/super-ml-pets/workflows/CI/badge.svg)
-![CodeQL](https://github.com/andreped/super-ml-pets/workflows/CodeQL/badge.svg)
 [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
 [![codecov](https://codecov.io/gh/andreped/super-ml-pets/branch/main/graph/badge.svg?token=9YF7NANQTE)](https://codecov.io/gh/andreped/super-ml-pets)
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrePedersenDev/SparkyAIPet)
+![GitHub issues](https://img.shields.io/github/issues/AndrePedersenDev/SparkyAIPet)
+![GitHub stars](https://img.shields.io/github/stars/AndrePedersenDev/SparkyAIPet?style=social)
  
 Train AIs for Super Auto Pets through a simulated environment and test the trained model against real opponents in the actual game! AI is trained using reinforcement learning and a machine vision system is used to capture the screen to give information to the AI.
+
+Sparky is a unique AI-driven pet represented as a $sparky token on the Solana blockchain. Its core parameters—Health, Energy, Food, and Happiness—dynamically evolve over time, reflecting the pet’s overall state. Users can monitor Sparky’s condition through a dedicated web interface and interact with it on Twitter, encouraging community engagement and widespread interest. The technology stack utilizes React and Node.js for the web application, PostgreSQL for data management, and Solana integration for token verification and updates. Future developments may include more advanced AI-driven behavior, additional features, and integration with external data sources. Sparky’s key value lies in offering an original, entertaining, and interactive digital pet experience powered by cutting-edge technology.
 
 </div>
 
@@ -26,7 +29,7 @@ We recommend using **Windows for deployment** as the UNIX-based systems require 
 
 1. Clone the repo:
 ```
-git clone https://github.com/andreped/super-ml-pets.git
+git clone https://github.com/AndrePedersenDev/SparkyAIPet.git
 ```
 
 2. Setup virtual environment:
@@ -45,9 +48,9 @@ pip install -r requirements.txt
 
 4. Download all pets, food, and misc icons
 ```
-wget https://github.com/andreped/super-ml-pets/releases/download/pets-01-2024/pets.zip -O pets.zip; Expand-Archive pets.zip -DestinationPath ./; Remove-Item pets.zip
-wget https://github.com/andreped/super-ml-pets/releases/download/food-01-2024/food.zip -O food.zip; Expand-Archive food.zip -DestinationPath ./; Remove-Item food.zip
-wget https://github.com/andreped/super-ml-pets/releases/download/misc-01-2024/misc.zip -O misc.zip; Expand-Archive misc.zip -DestinationPath ./; Remove-Item misc.zip
+wget https://github.com/AndrePedersenDev/SparkyAIPet/releases/download/pets-01-2024/pets.zip -O pets.zip; Expand-Archive pets.zip -DestinationPath ./; Remove-Item pets.zip
+wget https://github.com/AndrePedersenDev/SparkyAIPet/releases/download/food-01-2024/food.zip -O food.zip; Expand-Archive food.zip -DestinationPath ./; Remove-Item food.zip
+wget https://github.com/AndrePedersenDev/SparkyAIPet/releases/download/misc-01-2024/misc.zip -O misc.zip; Expand-Archive misc.zip -DestinationPath ./; Remove-Item misc.zip
 ```
 
 <details>
@@ -65,7 +68,7 @@ Note that the command `sudo su` enables administrator rights. This seems to be r
 
 </details>
 
-## [Usage](https://github.com/andreped/super-ml-pets#usage)
+## [Usage](https://github.com/AndrePedersenDev/SparkyAIPet#usage)
 This framework currently supports training and deploying RL models for SAP.
 
 <details open>
@@ -89,31 +92,7 @@ python main.py --help
 </details>
 
 <details open>
-<summary>Testing</summary>
 
-1. To use a trained model in battle, start the game Super Auto Pets.
-
-2. Ensure that the game is in full screen mode, disable all unneccessary prompts, enable auto name picker, and set speed to `200%` (you might also have to enable auto battle which can only be done in the first battle - if this is the first time you are playing this game).
-
-3. Change the UI style to classic for all options in customize including "Food art", "Background art", "Menu background", "Buff style", and "Held food".
- 
-4. Change UI style for pets to classic by going to the `pets` settings.
-
-5. Enter the arena by clicking `Arena mode`.
-
-6. Go outside the game and download a pretrained model from [here](https://github.com/andreped/super-ml-pets/releases/tag/v0.0.2), or use any pretrained model you might have. For simplicity, you can also run the following to download a example model:
-```
-wget https://github.com/andreped/super-ml-pets/releases/download/v0.0.6/model_sap_gym_sb3_280822_finetuned_641057_steps.zip
-```
-
-7. Then, simply start the AI by running this command from the terminal (with example path to pretrained model, **without extension .zip**):  
-```
-python main.py --task deploy --infer_model /path/to/model_sap_gym_sb3_280822_finetuned_641057_steps
-```
-
-8. Go back into the game and press the `Space` keyboard button (when you are in the Arena (in team preparation, before battle).
-
-It might take a few seconds, but you should now be able to see the AI start playing. Please, let it play in peace, or else it might get angry and you may have accidentally created [Skynet](https://en.wikipedia.org/wiki/Skynet_(Terminator)). If you accidentally exit the game, or dont have the game in fullscreen, the machine vision system will fail, and you will have to start a completely new game to use the AI (properly).
 
 </details>
 
